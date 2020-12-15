@@ -1,16 +1,11 @@
 <template>
   <div id="app">
-    <!-- <xiaohuihui/> -->
-    <!-- <Css2 v-for="i in 5" :key="i"/> -->
-  <!-- <div>    <img :src="imgUrl">  </div> -->
-    <router-view/>
-    <xiaohuihui/>
-
+    <!-- 除了 <router-view/>，什么垃圾都不要写 -->
+    <router-view />
   </div>
 </template>
 
 <script>
-
 //import Template from './components/Template.vue'
 //import HelloWorld from './components/HelloWorld.vue'
 //import cs from './components/cs.vue'
@@ -53,7 +48,7 @@ export default {
 </script>
 
 <style>
-  #app{
-    text-align: center;
-  }
+#app {
+  text-align: center;
+}
 </style>
