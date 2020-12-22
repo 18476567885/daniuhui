@@ -6,6 +6,9 @@ import Router from 'vue-router'
 // import C from '@/components/C'
 
 import first from '@/components/first'//第一步导入组件
+import css from '@/views/css'
+import test from '@/views/test'
+import bro from '@/views/bro'
 
 import html from '@/views/html'
 Vue.use(Router)//关键，安装路由插件，当前需要的的vue-router插件
@@ -20,6 +23,17 @@ export default new Router({
     { 
       path: '/html', //路由url地址，一个组件对应一个url
       component: html,//组件名
+    },
+    { 
+      path: '/css', //路由url地址，一个组件对应一个url
+      component: css,//组件名
+    },
+    { 
+      path: '/test', //路由url地址，一个组件对应一个url
+      component: test,//组件名
+    },{ 
+      path: '/bro', //路由url地址，一个组件对应一个url
+      component: bro,//组件名
     },
   ]
 })

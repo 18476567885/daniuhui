@@ -26,7 +26,7 @@
 //import date from './components/date'
 //import newConputed from './components/newConputed'
 // import dongtaibangding from './components/dongtaibangding'
-import xiaohuihui from "./components/xiaohuihui";
+// import xiaohuihui from "./components/xiaohuihui";
 import first from "./components/first";
 //引用
 //模板 脚本 样式
@@ -41,14 +41,13 @@ export default {
   name: "App",
   //注册组件 -- 使用组件标签
   components: {
-    first,
-    xiaohuihui
+    first
   }
 };
 </script>
 
 <style>
 #app {
-  text-align: center;
+  height: 100%;
 }
 </style>
