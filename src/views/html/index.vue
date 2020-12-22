@@ -1,19 +1,18 @@
 <template>
   <div class="CCC">
-    <poject></poject>
+  <jd/>
   </div>
 </template>
 <script>
 //引用
 //模板 脚本 样式
-import poject from '../html/poject'
+import   jd
+ from '../html/jd'
 export default {
   components: {
-    poject
-    
+    jd,
+  
   }
-  
-  
 };
 </script>
 <style>
