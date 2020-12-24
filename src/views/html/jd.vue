@@ -125,6 +125,7 @@
               <li></li>
               <li></li>
             </ul>
+            
           </div>
           <div class="slider-box"></div>
           <div class="ad-box"></div>
@@ -138,6 +139,9 @@
     <!-- container结束 -->
   </div>
 </template>
+<script>
+    
+</script>
 <style>
     *{
         margin: 0;
@@ -268,7 +272,7 @@ li {
     overflow: hidden;
 }
 .menu-box ul li:hover{
-    background: #333333;
+    background:rgb(105, 42, 42);
 
 }
 .menu-box ul li:hover  .sub-menu{

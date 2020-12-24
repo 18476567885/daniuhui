@@ -5,6 +5,7 @@
       <li @click="css">css练习</li>
       <li @click="test">test练习</li>
       <li @click="bro">2b青年</li>
+      <li @click='shopping'>千里之行</li>
     </ul>
   </div>
 </template>
@@ -26,6 +27,9 @@ export default {
     },
     bro() {
       this.$router.push({ path: "/bro" });
+    },
+    shopping() {
+      this.$router.push({ path: "/shopping" });
     }
   }
 };
