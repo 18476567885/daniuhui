@@ -96,13 +96,16 @@
     <div class="w">
       <div class="main">
         <div class="focus">
-            <a href=""> </a>
             <a href=""></a>
+            <a href=""> </a>
           <ul>
             <li>
               <img :src="img1" alt="" />
-            </li>
+            </li> 
+           
           </ul>
+         
+         
         </div>
         <div class="news">
           <div class="newsflash">
@@ -597,14 +600,16 @@ h4 {
   line-height: 20px;
 }
 .main {
+  
   height: 455px;
   width: 980px;
   margin-top: 10px;
   margin-left: 220px;
 }
 .main .focus {
+  position: relative;
   float: left;
-  background-color: purple;
+  /* background-color: purple; */
   width: 721px;
   height: 455px;
 }
