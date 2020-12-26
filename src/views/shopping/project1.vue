@@ -96,15 +96,23 @@
     <div class="w">
       <div class="main">
         <div class="focus">
-            <a href=""></a>
-            <a href=""> </a>
+           
+           <a href="" class="previ"> &lt; </a>
+              <a href="" class="next"> > </a> 
+           
           <ul>
             <li>
               <img :src="img1" alt="" />
             </li> 
            
           </ul>
-         
+         <ul class="abc">
+           <li class="selected"><a href="#"></a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+         </ul>
          
         </div>
         <div class="news">
@@ -220,6 +228,106 @@
         </div>
     </div>
     <!-- recom结束 -->
+    <div class="floor">
+    <div class="jiadian w">
+      <div class="box-hd">
+        <h3>家用电器</h3>
+        <div class="tab-lis">
+          <ul>
+            <li><a href="#" class="style-red">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- box-hd结束 -->
+      <div class="box-bd">
+        <div class="tab-contener">
+          <div class="tab-lis-item">
+            <div class="co1-210">
+              <ul>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+              </ul>
+              <a href="#">
+                <img src="../../assets/floor-1.png" alt="">
+              </a>
+            </div>
+            <div class="co1-329">
+              <a href="#">
+                <img src="../../assets/pic1.jpg" alt="">
+              </a>
+            </div>
+            <div class="co1-221">3</div>
+            <div class="co1-221">4</div>
+            <div class="co1-219">5</div>
+           
+          </div>
+          <!-- tab-lis-item结束 -->
+        </div>
+        <!-- tab-contener结束 -->
+      </div>
+      <!-- box-bd结束 -->
+    </div>
+     <!-- jiadian结束 -->
+     <div class="shouji w">
+      <div class="box-hd">
+        <h3>手机，数码，通讯</h3>
+        <div class="tab-lis">
+          <ul>
+            <li><a href="#" class="style-red">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+            <li><a href="#">不慌张</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- box-hd结束 -->
+      <div class="box-bd">
+        <div class="tab-contener">
+          <div class="tab-lis-item">
+            <div class="co1-210">
+              <ul>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+                <li><a href="#">不畏将来</a></li>
+              </ul>
+              <a href="#">
+                <img src="../../assets/floor-1.png" alt="">
+              </a>
+            </div>
+            <div class="co1-329">
+              <a href="#">
+                <img src="../../assets/pic1.jpg" alt="">
+              </a>
+            </div>
+            <div class="co1-221">3</div>
+            <div class="co1-221">4</div>
+            <div class="co1-219">5</div>
+           
+          </div>
+          <!-- tab-lis-item结束 -->
+        </div>
+        <!-- tab-contener结束 -->
+      </div>
+      <!-- box-bd结束 -->
+    </div>
+    <!-- shouji结束 -->
+  </div>
+  <!-- floor结束 -->
+   
     <div class="foot">
       <div class="w">
         <div class="service">
@@ -600,7 +708,7 @@ h4 {
   line-height: 20px;
 }
 .main {
-  
+  position: relative;
   height: 455px;
   width: 980px;
   margin-top: 10px;
@@ -612,6 +720,46 @@ h4 {
   /* background-color: purple; */
   width: 721px;
   height: 455px;
+}
+ .main .focus .abc{
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+  width: 100px;
+  height: 20px;
+  background: rgba(255,255,255,.3);
+}
+.focus .abc li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 6px;
+}
+ .main .focus  .selected{
+  background-color: red; 
+}
+.main  .focus .previ,
+.main  .focus .next{
+  position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+    line-height: 30px;
+    text-align: center;
+}
+  .main .focus  a:hover{
+    color: red;
+  }
+.main .previ{
+  left: 0;
+}
+.main .next{
+  right: 0;
 }
 .main .focus img {
   width: 721px;
@@ -708,5 +856,65 @@ h4 {
     height: 145px;
     background-color: #3c3c3c;
 
+}
+.box-hd{
+ height: 30px;
+ border-bottom: 2px solid rgb(179, 42, 42);
+ 
+}
+ .box-hd  h3 {
+  font-size: 18px;
+  float: left;
+  color: red;
+  
+}
+.tab-lis{
+  float: right;
+ line-height: 30px;
+}
+.tab-lis ul li {
+  float: left;
+}
+.tab-lis ul li a{
+   margin: 0 15px;
+
+}
+.style-red{
+  color: red;
+}
+.box-bd{
+  height: 360px;
+  background-color: pink;
+}
+.tab-lis-item>div{
+  float: left;
+  height: 360px;
+}
+a:hover{
+  color: red;
+}
+.co1-210{
+  width: 210px;
+  background-color: #f9f9ff;
+  text-align: center;
+}
+.co1-210 ul li{
+  float: left;
+  margin: 0 10px;
+    widows: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    line-height: 34px;
+    
+}
+.co1-329{
+  width: 329px;
+}
+.co1-221{
+  width: 220px;
+  border-right: 1px solid #ccc;
+}
+.co1-219{
+   width: 219px;
 }
 </style>

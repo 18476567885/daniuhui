@@ -3,6 +3,7 @@
      <div class="promo">
        <img src="../../assets/focus.jpg" alt="">
        <!-- 左側按鈕 -->
+      
         <a href="" class="prev">  &lt;</a>
         <a href="" class="next">  > </a>
         <ul class="promo-nav">
