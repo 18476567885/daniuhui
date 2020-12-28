@@ -216,7 +216,7 @@
   padding: 0;
 }
 a {
- 
+    color: #9d9d9d;
   text-decoration: none;
 }
 li {

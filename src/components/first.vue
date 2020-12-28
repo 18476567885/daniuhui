@@ -6,6 +6,7 @@
       <li @click="test">test练习</li>
       <li @click="bro">2b青年</li>
       <li @click='shopping'>千里之行</li>
+      <li @click='jsText'>加油呀</li>
     </ul>
   </div>
 </template>
@@ -30,6 +31,9 @@ export default {
     },
     shopping() {
       this.$router.push({ path: "/shopping" });
+    },
+    jsText(){
+      this.$router.push({path:'/jsText'})
     }
   }
 };
