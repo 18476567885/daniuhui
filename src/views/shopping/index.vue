@@ -1,14 +1,14 @@
 <template>
     <div>
       
-   <bootcss></bootcss>
+   <texe1></texe1>
     </div>
 </template>
 <script>
-  import bootcss from '../shopping/bootcss'
+  import texe1 from '../shopping/texe1'
     export default {
         components:{
-        bootcss
+texe1
         }
     }
 </script>
