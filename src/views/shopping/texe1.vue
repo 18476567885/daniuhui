@@ -32,8 +32,14 @@
           </ul>
         </div>
         <div class="nav-right">
-          <li> <a href="">SGNIN
-            <svg viewBox="0 0 24 24" fill="currentColor" class="bo bp ax as bq">
+          <li>
+            <a href=""
+              >SGNIN
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="bo bp ax as bq"
+              >
                 <g stroke="none" stroke-width="1">
                   <polygon
                     fill="none"
@@ -46,8 +52,8 @@
                   ></polygon>
                 </g>
               </svg>
-          </a>
-        </li>
+            </a>
+          </li>
         </div>
       </div>
       <!-- 版心w结束 -->
@@ -58,12 +64,15 @@
       <div class="banner-2"></div>
       <div class="banner-3"></div>
       <div class="banner-4">
-        <ul>
-          <li><div class="fist"></div></li>
-          <li> <div class="two"></div></li>
+       <div class="banner-item"> 
+         <ul>
+          <li><div class="fist">
+            Easy
+          </div></li>
+          <li><div class="two"></div></li>
           <li><div class="three"></div></li>
         </ul>
-        <div class="banner-4-right"></div>
+      </div>
       </div>
     </div>
   </div>
@@ -85,7 +94,7 @@ a {
   margin: auto;
 }
 .header {
-    position: sticky;
+  position: sticky;
   line-height: 60px;
   height: 60px;
   background-color: #1e88e5;
@@ -121,31 +130,91 @@ a {
 }
 .header .nav-right {
   float: right;
-  
 }
 .header .nav-right a {
   color: white;
-   
-} 
-      
-
-.header .nav-right svg{
-   position: relative;
-   top: 2px;
-   height: 16px;
-   width: 16px;
 }
-.banner{
+
+.header .nav-right svg {
+  position: relative;
+  top: 2px;
+  height: 16px;
+  width: 16px;
+}
+.banner {
+  position: relative;
   overflow: hidden;
   color: #636363;
   line-height: 1.6;
   font-size: 17px;
 }
-.header .nav li:hover,.header .nav-right
-li:hover{
-  background-color:#2196F3 ;
+.header .nav li:hover,
+.header .nav-right li:hover {
+  background-color: #2196f3;
 }
-.header .nav-right li{
+.header .nav-right li {
   display: inline-block;
+}
+.banner .banner-1 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  transform: skewY(-8.5deg) translateY(76%);
+  height: 680px;
+  top: -650px;
+  background: -webkit-linear-gradient(90deg, #2196f3, #1976d2);
+  background: -moz-linear-gradient(90deg, #2196f3, #1976d2);
+  background: linear-gradient(90deg, #2196f3, #1976d2);
+}
+.banner .banner-2{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top: -650px;
+  transform: skewY(-8.5deg) translateY(76%);
+  background: -webkit-linear-gradient(100deg, #1976D2, #2196F3);
+    background: -moz-linear-gradient(100deg, #1976D2, #2196F3);
+    background: linear-gradient(100deg, #1976D2, #2196F3);
+}
+.banner .banner-3{
+  position: absolute;
+  top: -650px;
+  width: 100%;
+  height: 365px;
+  transform: skewY(-8.5deg) translateY(76%);
+  background: -webkit-linear-gradient(20deg, #1E88E5, #1976D2);
+    background: -moz-linear-gradient(20deg, #1E88E5, #1976D2);
+    background: linear-gradient(20deg, #1E88E5, #1976D2);
+}
+.banner .banner-4{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1040px;
+
+  font-size: 17px;
+  line-height: 1.6;
+  color: #636363;
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  padding: 120px 20px 100px 20px;
+  -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+
+}
+.banner .banner-4 .banner-item{
+  width: 100%;
+  flex: 1 0 470px;
+}
+.banner-item .first{
+  letter-spacing: .8px;
+  padding-bottom: 30px;
+  letter-spacing: 0.8px;
+  line-height: 1.25;
+  font-size: 44px;
+  font-weight: 500;
 }
 </style>

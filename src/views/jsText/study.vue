@@ -111,7 +111,7 @@ export default {
       }
     } */
 
-/* 
+    /* 
     //由用户输入数字n，计算 3/2 + 4/3 + 5/4 +....+ (n+1)/n  的结果
     //用户输入数字 n
     var n = Number(prompt('请输入数字'));
@@ -122,7 +122,6 @@ export default {
         sum += (i+1)/i
     }
     alert(sum.toFixed(2)); */
-
 
     // // 计算阶乘
     // // 请用户输入数字
@@ -135,6 +134,72 @@ export default {
     // }
     // // 显示结果
     // alert(result);
+
+    // for(var i=1; i<=100 ;i++){
+    //     if(i % 5 ==0 && i % 3 ==0){
+    //         console.log(i)
+    //     }
+    // // }
+    // var i=1;
+    // while(i<=100){
+    //    if(i %3==0 && i% 5==0) {
+    //        console.log(i)
+    //    }
+    // //     i++;
+    // // }
+    // var week = new Date().getDay();
+    // var weekstr = '';
+    // switch (week) {
+    //   case 0:
+    //    weekstr="日";
+    //     break;
+    //   case 1:
+    //   weekstr="一";
+    //     break;
+    //   case 2:
+    //   weekstr="二";
+    //     break;
+    //   case 3:
+    //   weekstr="三";
+    //     break;
+    //   case 4:
+    //   weekstr="四";
+    //     break;
+    //   case 5:
+    //   weekstr="五";
+    //     break;
+    //   case 6:
+    //   weekstr="六";
+    //     break;
+    // }
+    // document.write("今天是星期" +  weekstr)
+
+//由用户输入数字n，计算3/2 +4/3+5/4+....+(n+1)/n  结果
+// //输入数字n
+// var n=Number(prompt('请输入数字'));
+// //累加器·
+// var sum = 0;
+// //遍历分母就可以，因为分子就是分母加1的关系
+// for(var i=2;i<=n;i++){
+//     sum += (i+1)/i;
+
+
+// }
+// alert(sum.toFixed(2));
+
+
+// //由用户输入数字n，计算阶乘
+// var n =Number(prompt("请输入数字"));
+// //累乘器
+// var  result = 1;
+// //倒着遍历计算阶乘
+// for(var i=n; i>=1; i--){
+//     result*=i;
+// }
+// //显示结果
+// alert(result);
+
+  
   }
 };
 </script>
