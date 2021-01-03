@@ -130,9 +130,16 @@ export default {
 // //返回被删除的一项
 // console.log(item);
 
-var arr=[1,2,3,4,5,6];
-arr.splice(3,2,66,77,88,99,);
-console.log(arr);
+// var arr=[1,2,3,4,5,6];
+// arr.splice(3,2,66,77,88,99,);
+// console.log(arr);
+
+
+
+var n = 1; 
+while(true){
+if (n*n >456789 ) { console.log (n) ; break; }
+n ++ ;  }
 }
 };
 </script>
