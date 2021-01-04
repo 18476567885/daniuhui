@@ -262,15 +262,15 @@ export default {
     //    })();
     //    alert(title);
 
-    var arr = [];
-    for (var i = 0; i < 5; i++) {
-      (function(i) {
-        arr.push(function() {
-          alert(i);
-        });
-      })(i);
-    }
-    arr[2]();
+    // var arr = [];
+    // for (var i = 0; i < 5; i++) {
+    //   (function(i) {
+    //     arr.push(function() {
+    //       alert(i);
+    //     });
+    //   })(i);
+    // }
+    // arr[2]();
   }
 };
 </script>

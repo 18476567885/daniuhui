@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hanShu/>
+    <jieDian/>
     <!-- <suanFa/> -->
     <!-- <study></study> -->
   <!-- <jsstart></jsstart> -->
@@ -10,10 +10,10 @@
 <script>
     // import suanFa from '../jsText/suanFa'
     // import study from '../jsText/study'
-    import hanShu from '../jsText/hanShu'
+    import jieDian from '../jsText/jieDian'
 export default {
     components:{
-        hanShu
+        jieDian
     }
 }
 </script>
