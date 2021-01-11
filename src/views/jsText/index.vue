@@ -1,6 +1,6 @@
 <template>
   <div>
-    <jieDian/>
+    <carousel/>
     <!-- <suanFa/> -->
     <!-- <study></study> -->
   <!-- <jsstart></jsstart> -->
@@ -10,10 +10,10 @@
 <script>
     // import suanFa from '../jsText/suanFa'
     // import study from '../jsText/study'
-    import jieDian from '../jsText/jieDian'
+    import carousel from '../jsText/carousel'
 export default {
     components:{
-        jieDian
+      carousel
     }
 }
 </script>
