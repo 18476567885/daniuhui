@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .conten{
+            width: 1000px;
+            margin: 30px auto;
+            background-color: #ccc;
+            font-size: 50px;
+        }
+        .floonav{
+            position: fixed;
+            top: 50%;
+            margin-top: -100px;
+            right: 40px;
+            width: 120px;
+            height: 200px;
+            background-color: salmon;
+
+        }
+       .floonav ul{
+            list-style: none;
+
+        }
+        .floonav ul li{
+            line-height: 40px;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+        
+           font-size: 20px;
+           /* 小手指针 */
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="floonav">
+        <ul id="list">
+            <li data-n='科技'>科技</li>
+            <li data-n='体育'>体育</li>
+            <li data-n='新闻'>新闻</li>
+            <li data-n='娱乐'>娱乐</li>
+            <li data-n='视频'>视频</li>
+           
+        </ul>
+    </div>
+    <section class="conten" style="height: 567px;" data-n='科技'>科技栏目</section>
+    <section class="conten" style="height: 347px;" data-n='体育'>体育栏目</section>
+    <section class="conten" style="height: 667px;" data-n='新闻'>新闻栏目</section>
+    <section class="conten" style="height: 467px;" data-n='娱乐'>娱乐栏目</section>
+    <section class="conten" style="height: 867px;" data-n='视频'>视频栏目</section>
+
+    <script>
+        //使用事件委托给 li添加监听
+        var list=document.getElementById('list');
+        list.onclick=function(e){
+            if(e.targe.targetName.toLowerCase()=='li'){
+              var n=  alert(e.target.getAttribute('data-n'))
+            }
+        }
+    </script>
+</body>
+
+    </html>

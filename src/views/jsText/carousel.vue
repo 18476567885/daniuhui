@@ -26,8 +26,14 @@ export default {
     lisa.appendChild(cloneli);
     //当前ul的显示 到第几张图片，从0开始
     var idx = 0;
+
+    //函数节流，
+    var lock=true;
     //监听
     right_btn.onclick = function() {
+         //判断锁的状态
+      if (!lock) return;
+      lock = false;
       //给lisa加过渡，虽然css中已加，但是最后一张图片会把过渡去掉
       lisa.style.transition = "left .5s ease 0s";
 
@@ -42,6 +48,9 @@ export default {
         }, 500);
       }
       lisa.style.left = -idx * 650 + "px";
+      setTimeout(function(){
+          lock=true
+      },500)
     };
 
     left_btn.onclick = function() {
@@ -63,6 +72,9 @@ export default {
           lisa.style.left = -idx * 650 + "px";
 
       }
+      setTimeout(function(){
+          lock=true
+      },500)
     };
   }
 };

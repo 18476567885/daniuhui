@@ -7,6 +7,7 @@
       <li @click="bro">2b青年</li>
       <li @click='shopping'>千里之行</li>
       <li @click='jsText'>加油呀</li>
+      <li @click='dom'>js高潮</li>
     </ul>
   </div>
 </template>
@@ -34,6 +35,9 @@ export default {
     },
     jsText(){
       this.$router.push({path:'/jsText'})
+    },
+    dom(){
+      this.$router.push({path:'/dom'})
     }
   }
 };

@@ -12,6 +12,7 @@ import bro from '@/views/bro'
 import shopping from '@/views/shopping'
 import html from '@/views/html'
 import jsText from '@/views/jsText'
+import dom from '@/views/dom'
 Vue.use(Router)//关键，安装路由插件，当前需要的的vue-router插件
 
 export default new Router({
@@ -42,6 +43,10 @@ export default new Router({
     {
       path:'/jsText',
       component:jsText,
+    },
+    {
+      path:'/dom',
+      component:dom,
     }
   ]
 })

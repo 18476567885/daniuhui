@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carousel/>
+    <carousel2/>
     <!-- <suanFa/> -->
     <!-- <study></study> -->
   <!-- <jsstart></jsstart> -->
@@ -10,10 +10,10 @@
 <script>
     // import suanFa from '../jsText/suanFa'
     // import study from '../jsText/study'
-    import carousel from '../jsText/carousel'
+    import carousel2 from '../jsText/carousel2'
 export default {
     components:{
-      carousel
+      carousel2
     }
 }
 </script>

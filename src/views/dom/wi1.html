@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        height: 5000px;
+        background-image: linear-gradient(to bottom,blue,yellow);
+       }
+       .backtotop{
+           width: 60px;
+           height: 60px;
+           background-color:rgba(255, 255, 255, .6);
+           position: fixed;
+           bottom: 100px;
+           right: 100px;
+           cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <!-- <h1>我是history方法的网页</h1>
+    <button id="btn">回退</button>
+</body>
+
+<script>
+    var btn =document.getElementById('btn');
+    btn.onclick=function(){
+        history.back();
+    }
+</script> -->
+
+<!-- 
+ <button id="btn">点我去百度</button>
+ <button id="btn1">刷新</button> -->
+
+ <div class="backtotop" id="backtotop"></div>
+<script>
+
+var time;
+var backtotop=document.getElementById('backtotop');
+backtotop.onclick=function(){
+    //防止频发点击，定时器先关
+    clearInterval(time);
+    //设置定时器
+   time=  setInterval(function(){
+       //不断让 scrollTop减少
+     document.documentElement.scrollTop-=100;
+     //判断值，定时器终要停下
+     if(document.documentElement.scrollTop<=0){
+         clearInterval(time)
+     }
+    },20)
+}
+    // var btn =document.getElementById('btn');
+
+    // var btn1 =document.getElementById('btn1');
+    // btn.onclick=function(){
+    //     window.location='http://www.baidu.com'
+    // }
+    // btn1.onclick=function(){
+    //     window.location.reload(true);
+    // }
+</script>
+</html>
