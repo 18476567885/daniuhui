@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>模板字符串是什么</title>
+  </head>
+  <body>
+    <!-- <p>学生信息表</p>
+    <ul id="list">
+      <li style="list-style: none;">信息加载中.....</li>
+    </ul> -->
+    <script>
+      // 一般字符串
+      // const userName1='alex';
+      // // 用了（反引号的） 模板字符串
+      // const userName2=`alex`;
+      // console.log(userName1,userName2);
+
+      // 2，模板字符串与一般字符串的区别
+      //   const person = {
+      //     userName1: "alex",
+      //     age: 18,
+      //     sex: "male"
+      //   };
+      //   一般字符串的拼接法
+
+      //   const info =
+      //     "我的名字是" +
+      //     person.userName1 +
+      //     "," +
+      //     "性别：" +
+      //     person.sex +
+      //     "," +
+      //     "今年" +
+      //     person.age +
+      //     "岁了";
+      //   console.log(info);
+
+      // 模板字符串
+      //   const info = `我的名字是：${person.userName1},性别：${person.sex},今年${person.age}岁了`;
+      //   console.log(info);
+      //  和其他东西一起使用的时候，使用模板字符串，方便注入数据
+
+      // 1，输出多行字符窜
+      // 一般字符串使用 \n
+      // const info="第一行\n第二行"
+      // console.log(info);
+
+      // 模板字符串
+      //写法1)
+      // const info=`第一行\n第二行`
+      // 写法2）:注意模板字符串中的，所有的空格，换行或缩进都会
+      // 被保留在输出之中（怎么写就怎么输出）
+      //     const info=`第一行
+      // 第二行`;
+      //     console.log(info);
+
+      // 2,输出`和\ 等特殊字符
+      // \转译字符
+      // const info=`\``;
+      // const info=`\\`
+      // const info=`'`
+      // console.log(info);
+
+      // 3,模板字符串的注入：只要最终可以得出一个值的就
+      //   可以通过 ${}  注入到模板字符串中
+      // ${}
+      //   const userName = "alex";
+      //   const person = { age: 18, sex: "male" };
+      //   const getSex = function(sex) {
+      //     return sex == "male" ? "男" : "女";
+      //   };
+      //   const info = `${userName},${person.age},${getSex(person.sex)}`;
+      //   console.log(info);
+
+      //   const students = [
+      //     { userName: "alex", age: 18, sex: "male" },
+      //     { userName: "zhangSan", age: 28, sex: "male" },
+      //     { userName: "liSi", age: 38, sex: "fmale" }
+      //   ];
+      //   const list = document.getElementById("list");
+      //   let sum = ``;
+      //   for (let i = 0; i < students.length; i++) {
+      //     sum += `<li>我的名字是：${students[i].userName};${students[i].sex};${students[i].age}</li>`;
+      //   }
+      //   setTimeout(function() {
+      //     list.innerHTML = sum;
+
+      //   }, 2000);
+
+      //1,认识箭头函数，省略关键字 function
+      //还是匿名函数，没有办法声明之后在其他地方调用
+      //可以把箭头函数赋值给变量或常量；就可以调用
+      //   const add = (x, y) => {
+      //     return x + y;
+      //   };
+      //   console.log(add(1,11));
+
+      // 2,箭头函数的结构
+      // const/let 函数名=参数=>函数体；
+
+      // 3，如何将一般函数改成箭头函数
+      // 声明形式
+      //   function add() {}
+      // 声明形式->函数表达式
+      //   const add = function() {};
+      // 函数表达式->箭头函数
+      //   const add = () => {};
+
+      // 1)单个参数的箭头函数
+      //   const add = x => {
+      //     return x + 1;
+      //   };
+      //   console.log(add(1));
+
+      // 2)无参数或多个参数不能省略圆括号
+      // const add = () => {
+      //     return 1 + 1;
+      //   };
+      //   console.log(add());
+
+      //   const add = (x, y) => {
+      //     return x + y;
+      //   };
+      //   console.log(add(88, 11));
+
+      // 3,单行函数体可以化简，多行不能再简化了
+      // return和花括号可以一起省略
+      //   const add = (x, y) => x + y;
+
+      //   console.log(add(88, 11));
+      // 也可返回数组
+    //   const add = (x, y) =>[x,y];
+
+    //   console.log(add(88, 11));
+
+
+    // 1,全局作用域中的this指向
+    // console.log(this); // window
+
+    // 2,一般函数（非箭头函数）中的this指向
+    // 严格模式
+    'use strict';
+    function add(){
+        console.log(this);
+    }
+    add(); //undefinded 非严格模式 指向window
+    </script>
+  </body>
+</html>

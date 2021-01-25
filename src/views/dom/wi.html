@@ -17,7 +17,7 @@
        console.log('窗口内宽（不包含滚动条）',document.documentElement.clientWidth);
        console.log('窗口外宽',window.outerWidth);
     </script> -->
-    <h1><a href="wi1.html">history方法</a></h1>
+    <!-- <h1><a href="wi1.html">history方法</a></h1> -->
     <script>
       //监听窗口改变尺寸事件
       // window.onresize=function(){
@@ -25,17 +25,104 @@
       //     console.log('窗口改变尺寸了', root.clientWidth,root.clientHeight);
       // }
 
-    //   window.onscroll = function() {
-    //     console.log("窗口卷动了", window.scrollY);
-    //   };
+      //   window.onscroll = function() {
+      //     console.log("窗口卷动了", window.scrollY);
+      //   };
+
+      // console.log('浏览器品牌',navigator.appName);
+      // console.log('浏览器版本', navigator.appVersion);
+      // console.log('用户代理',  navigator.userAgent);
+      // console.log('操作系统',  navigator.platform);
+      // var obj1 = {
+      //   a: 1,
+      //   b: 2,
+      //   fn: function() {
+      //     console.log(this.a + this.b);
+      //   }
+      // };
+      // var a=3;
+      // var b=4;
+      // var fun=obj1.fn;
+      // fun();
+
+      // function fun(){
+      //   return this.a+this.b;
+      // };
+      // var a=1, b=2;
+      // var obj={
+      //   a:3,
+      //   b:fun(),    //适用规则2
+      //   fun:fun
+      // };
+      // var result=obj.fun();   //适用规则1
+      // console.log(result);
+
+      // var obj = {
+      //   a: 1,
+      //   b: 2,
+      //   fn: function() {
+      //     console.log(this.a + this.b);
+      //   }
+      // };
+      // var f = obj.fn;
+      // f();    //  NaN
+
+      // var arr=['a','b','c',function(){
+      //   console.log(
+      //     this[0]
+      //   );
+      // }];
+      // arr[3]()
+
+      // function fun() {
+      //   arguments[3]();
+      // }
+      // fun("a", "b", "c", function() {
+      //   console.log(this[1]);
+      // });
+
+      // var a = 1;
+      // var obj = {
+      //   a: 2,
+      //   fun: (function() {
+      //     var a = this.a;
+      //     return function() {
+      //       console.log(a + this.a);
+      //     };
+      //   })()
+      // };
+      // obj.fun();
+
+      // // setInterval(函数，时间)；
+      // //setTimeout(函数，时间);
+
+      // // var obj = {
+      // //   a: 1,
+      // //   b: 2,
+      // //   fun: function() {
+      // //     console.log(this.a + this.b);
+      // //   }
+      // // };
+      // // var a = 3,
+      // //   b = 4;
+      // // setTimeout(obj.fun, 2000);  //7
+
+      // var obj = {
+      //   a: 1,
+      //   b: 2,
+      //   fun: function() {
+      //     console.log(this.a + this.b);
+      //   }
+      // };
+      // var a = 3,
+      //   b = 4;
+      // setTimeout(function() {
+      //   obj.fun();
+      // }, 2000);
 
 
-    // console.log('浏览器品牌',navigator.appName);
-    // console.log('浏览器版本', navigator.appVersion);
-    // console.log('用户代理',  navigator.userAgent);
-    // console.log('操作系统',  navigator.platform);
 
-
+      
     </script>
   </body>
 </html>

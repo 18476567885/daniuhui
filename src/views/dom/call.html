@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function sum(b1,b2) {
+      //     console.log(this.c + this.m + this.e);
+      //   }
+      //   var xiaoming = {
+      //     c: 100,
+      //     m: 90,
+      //     e: 80
+      //   };
+      //   sum.call(xiaoming,3,5);
+      //   sum.apply(xiaoming,[3,5]);
+
+      // function fun1() {
+      //   //此时用apply
+      //   fun2.apply(this, arguments);
+      // }
+      // function fun2(a,b) {
+      //   console.log(a + b);
+      // }
+      // fun1(33, 44);
+
+      //   function fun() {
+      //     this.a = 3;
+      //     this.b = 6;
+      //     if (this.a > this.b) {
+      //       this.c = 10;
+      //     } else {
+      //       this.c = 20;
+      //     }
+      //   }
+      //   var obj = new fun();
+      //   console.log(obj);
+
+      //   function People(name, age, sex) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.sex = sex;
+      //     //尝试为对象添加方法
+      //     this.sayHello = function() {
+      //       console.log("我是" + this.name + ",我" + this.age+'岁了');
+      //     };
+      //   }
+      //   var xiaoming = new People("小明", 12, "男");
+      //   var xiaohong = new People("小红", 10, "女");
+      //   var xiaolin = new People("小林", 18, "男");
+      //   xiaoming.sayHello();
+      //   xiaohong.sayHello();
+      //   xiaolin.sayHello();
+
+      //   function sum() {
+      //     return a + b;
+      //   }
+      //   console.log(sum.prototype);
+      //   console.log(typeof sum.prototype);
+      //   console.log(sum.prototype.constructor === sum);
+
+      //   function People(name, age, sex) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.sex = sex;
+      //   }
+      //   //实例化
+      //   var xiaohong = new People("小红", 12, "男");
+      //   //测试三角关系是否存在
+      //   console.log(xiaohong.__proto__ === People.prototype);
+
+      //   function Pepole(name, age, sex) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.sex = sex;
+      //   }
+      //   Pepole.prototype.nationality = "中国";
+      //   var xiaolin = new Pepole("xiaolin", 12, "男");
+      //   console.log(xiaolin);
+      //   console.log(xiaolin.nationality);
+
+      //   console.log(xiaolin.hasOwnProperty("name")); //true
+      //   console.log(xiaolin.hasOwnProperty("nationality")); //false
+      //   console.log("name" in xiaolin); //true
+      //   console.log("nationality" in xiaolin); //true
+
+      //   function Pepole(name, age, sex) {
+      //     this.name = name;
+      //     this.age = age;
+      //     this.sex = sex;
+      //   }
+      //   Pepole.prototype.sayHello = function() {
+      //     console.log("你好，我是" + this.name + ",我今年" + this.age + "岁了");
+      //   };
+      //   Pepole.prototype.growUp = function() {
+      //     this.age++;
+      //   };
+      //   var xiaolin = new Pepole("小林", 12, "男");
+      //   var xiaohong = new Pepole("小红", 18, "女");
+      //   console.log(xiaolin.sayHello === xiaohong.sayHello); // true
+      //   xiaolin.sayHello();
+      //   xiaohong.sayHello();
+      //   xiaolin.growUp();
+      //   xiaolin.growUp();
+      //   xiaolin.growUp();
+      //   xiaolin.sayHello();
+
+      //   function Pepole(name, age) {
+      //     this.name = name;
+      //     this.age = age;
+      //   }
+      //   var xiaolin = new Pepole("小林", 18);
+      //   console.log(xiaolin.__proto__.__proto__ === Object.prototype); //  true
+      //   //  原型链终点
+      //   console.log(Object.prototype.__proto__); //  null
+      //   var char = xiaolin.toString();
+      //   console.log( char);
+
+    //   var arr = [11, 22, 333, 44];
+    //   console.log(arr.__proto__ === Array.prototype); //true
+    //   console.log(arr.__proto__.__proto__ === Object.prototype);  // true
+    //   console.log(Array.prototype.hasOwnProperty("push"));      // true
+    //   console.log(Array.prototype.hasOwnProperty("splice"));   // true
+
+
+
+
+    </script>
+  </body>
+</html>

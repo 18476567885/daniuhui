@@ -8,6 +8,7 @@
       <li @click='shopping'>千里之行</li>
       <li @click='jsText'>加油呀</li>
       <li @click='dom'>js高潮</li>
+      <li @click='es66'>ES6++</li>
     </ul>
   </div>
 </template>
@@ -38,6 +39,9 @@ export default {
     },
     dom(){
       this.$router.push({path:'/dom'})
+    },
+    es66(){
+      this.$router.push({path:'/es66'})
     }
   }
 };

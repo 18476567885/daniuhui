@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>let与const的应用</title>
+  </head>
+  <style>
+    body {
+      padding: 50px 0 0 150px;
+    }
+    .btn {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+      font-size: 80px;
+      /* 小手指 */
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button class="btn">1</button>
+    <button class="btn">2</button>
+    <button class="btn">3</button>
+    <script>
+      // var btns = document.querySelectorAll(".btn");
+      // for (var i = 0; i < btns.length; i++) {
+      //   (function(index) {
+      //     btns[index].addEventListener(
+      //       "click",
+      //       function() {
+      //         console.log(index);
+      //       },
+      //       false
+      //     );
+      //   })(i);
+      // }
+
+      // var btns = document.querySelectorAll(".btn");
+      // for (var i = 0; i < btns.length; i++) {
+      //   //绑定点击事件
+      //   btns[i].addEventListener(
+      //     "click",
+      //     //事件处理函数
+      //     function() {
+      //       console.log(i);
+      //   // console.log(btns.length);
+
+      //     },
+      //     //是否捕获
+      //     false
+      //   );
+      // }
+
+      //闭包
+      // var btns = document.querySelectorAll(".btn");
+      // for (var i = 0; i < btns.length; i++) {
+      //立即执行的匿名函数
+      //   (function(index) {
+      //     btns[index].addEventListener(
+      //       "click",
+      //       function() {
+      //         console.log(index);
+      //       },
+      //       false
+      //     );
+      //   })(i);
+      // }
+
+      //let
+      var btns = document.querySelectorAll(".btn");
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener(
+          "click",
+          function() {
+            console.log(i);
+          },
+          false
+        );
+      }
+    </script>
+  </body>
+</html>
